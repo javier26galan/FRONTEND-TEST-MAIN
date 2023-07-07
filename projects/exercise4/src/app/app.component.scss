@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+}
+// grid configuration
+.container {
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas:
+    'header header header header'
+    'sidebar sidebar featured featured'
+    'sidebar sidebar a b';
+  padding: 1em;
+  font-size: 2em;
+  height: 90vh;
+}
+
+header {
+  padding: 1em;
+  color: #ececec;
+  background-color: #212427;
+  grid-area: header;
+}
+
+.sidebar {
+  padding: 1em;
+  color: #ececec;
+  background-color: #212427;
+  grid-area: sidebar;
+}
+
+.featured {
+  padding: 1em;
+  color: #ececec;
+  background-color: #212427;
+  grid-area: featured;
+}
+
+.a {
+  padding: 1em;
+  color: #ececec;
+  background-color: #212427;
+  grid-area: a;
+}
+
+.b {
+  padding: 1em;
+  color: #ececec;
+  background-color: #212427;
+  grid-area: b;
+}
+
+@media (min-width: 900px) {
+  // media paraque a partir de los 900px de ancho el contenido este centrado
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 400px) {
+  // media paraque a partir de los 400px de ancho el contenido se stackee
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container > * {
+    flex-basis: 100%;
+  }
+}

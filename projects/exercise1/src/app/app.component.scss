@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+}
+// estilos formulario
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 1em;
+  align-items: center;
+}
+input {
+  width: 200px;
+  margin-top: 0.25em;
+}
+
+button {
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  margin-top: 0.25em;
+}
+
+//div errores o succes
+.container {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+
+.container .success {
+  color: forestgreen;
+}
+
+.container .error {
+  color: red;
+}
